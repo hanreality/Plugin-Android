@@ -21,7 +21,7 @@ uploadArchives {
             pom.version = '1.0-SNAPSHOT'
             pom.artifactId = 'hello'
             // repo仓库路径，可以使用相对路径
-            repository(url: uri('/Users/han.chen/.m2/repository'))
+            repository(url: uri('../../.m2/repository'))
         }
     }
 }
