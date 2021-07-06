@@ -1,8 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'com.hanreality.plugin'
-    id 'com.hanreality.apk'
+//    id 'com.hanreality.plugin'
+//    id 'com.hanreality.apk'
 }
 
 android {
@@ -32,10 +32,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-}
-
-apkDistConf {
-    targetApkName "plugin-demo"
 }
 
 dependencies {

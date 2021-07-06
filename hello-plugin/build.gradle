@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'groovy'
-    id 'maven'
+    id 'com.github.dcendents.android-maven'
 }
 
 repositories {
@@ -12,19 +12,8 @@ dependencies {
     implementation gradleApi()
     implementation localGroovy()
 }
-
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            // 调用方式就是 'com.hanreality.plugin:hello:1.0-SNAPSHOT'
-            pom.groupId = 'com.hanreality.plugin'
-            pom.version = '1.0-SNAPSHOT'
-            pom.artifactId = 'hello'
-            // repo仓库路径，可以使用相对路径
-            repository(url: uri('/Users/han.chen/.m2/repository'))
-        }
-    }
-}
+group = 'com.hanreality.plugin'
+//artifactId = 'plugin'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
