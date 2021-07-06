@@ -1,3 +1,2 @@
-rootProject.name = "PluginDemo"
-include ':app'
-include ':hello-plugin'
+rootProject.name = "Plugin-Android"
+include ':plugin-android'

@@ -12,8 +12,7 @@ dependencies {
     implementation gradleApi()
     implementation localGroovy()
 }
-group = 'com.hanreality.plugin'
-//artifactId = 'plugin'
+group = 'com.github.hanreality'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
